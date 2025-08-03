@@ -203,7 +203,7 @@
         <img src="./static/images/accident_MD-1.png" style="width: 24%;" />
       </div>
       <h2 class="subtitle has-text-left">
-        The average number of accidents per month for each year in Massachusetts, Iowa, Delaware, and Maryland. The sharp drop in 2020 is due to the impact of COVID-19.
+        The average number of <strong> accidents per month</strong> for each year in Massachusetts, Iowa, Delaware, and Maryland. The sharp drop in 2020 is due to the impact of COVID-19.
       </h2>
     </div>
   </div>
@@ -222,11 +222,68 @@
         <img src="./static/images/main_result.png" style="width: 96%;" />
       </div>
       <h2 class="subtitle has-text-left">
-        <strong>Main results of GNNs, vision models, and multimodal fusion strategies.</strong> The performance is evaluated using the mean absolute error (MAE) and area under the ROC curve (AUROC) on the test split. <strong>A leave-one-out analysis is also attached.</strong> To account for variability, each experiment is repeated with three different random seeds, and we report the averaged results along with standard deviations.
+        <strong>Main results of GNNs, vision models, and multimodal fusion strategies.</strong> The performance is evaluated using the mean absolute error (MAE) and area under the ROC curve (AUROC) on the test split. 
+        
+        <strong>A leave-one-out analysis is also attached.</strong> To account for variability, each experiment is repeated with three different random seeds, and we report the averaged results along with standard deviations.
       </h2>
     </div>
   </div>
 </section>
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="image-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin-bottom: 1.5rem;">
+        
+        <figure style="width: 24%; text-align: center;">
+          <img src="./static/images/MA_spring.png" style="width: 100%;" />
+          <figcaption style="font-size: 0.9em; margin-top: 0.3em;">MA accidents in Spring</figcaption>
+        </figure>
+
+        <figure style="width: 24%; text-align: center;">
+          <img src="./static/images/MA_winter.png" style="width: 100%;" />
+          <figcaption style="font-size: 0.9em; margin-top: 0.3em;">MA accidents in Winter</figcaption>
+        </figure>
+
+        <figure style="width: 24%; text-align: center;">
+          <img src="./static/images/IAA_spring.png" style="width: 100%;" />
+          <figcaption style="font-size: 0.9em; margin-top: 0.3em;">IA accidents in Spring</figcaption>
+        </figure>
+
+        <figure style="width: 24%; text-align: center;">
+          <img src="./static/images/IAA_winter.png" style="width: 100%;" />
+          <figcaption style="font-size: 0.9em; margin-top: 0.3em;">IA accidents in Winter</figcaption>
+        </figure>
+
+      </div>
+      <h2 class="subtitle has-text-left">
+        <strong>Seasonal accident counts of Massachusetts and Iowa.</strong> It is evident that accident points are more densely distributed in winter, indicating a higher frequency of incidents likely due to adverse weather conditions.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Causal Analysis</h2>
+      </div>
+    </div>
+    <div class="hero-body">
+      <div class="image-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; margin-bottom: 1.5rem;">
+        <img src="./static/images/ATT.png" style="width: 65%;" />
+      </div>
+      <h2 class="subtitle has-text-left">
+        <strong>Average treatment effect on the treated (AAT) among all six states.</strong> We analyze the effect of seasonal variation, road type, and precipitation. We vary for different years to compute the mean and standard deviations.
+      </h2>
+    </div>
+  </div>
+</section>
+
 
 <!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
