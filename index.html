@@ -129,14 +129,16 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
+      <div class="image-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem;">
+        <img src="./static/images/image_sample_MA1.png" style="width: 32%;" />
+        <img src="./static/images/image_sample_motorway.png" style="width: 32%;" />
+        <img src="./static/images/image_sample_MA0.png" style="width: 32%;" />
+        <img src="./static/images/image_sample_NV0.png" style="width: 32%;" />
+        <img src="./static/images/image_sample_mix0.png" style="width: 32%;" />
+        <img src="./static/images/image_sample_link.png" style="width: 32%;" />
+      </div>
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
+        <strong>satellite images showing different types of roads.</strong> Each image is centered around a road network node and captures both the physical characteristics of the road, such as layout, width, and intersections, and the surrounding context, including vegetation, buildings, and terrain.
       </h2>
     </div>
   </div>
@@ -154,7 +156,7 @@
             We consider analyzing traffic accident patterns using both road network and satellite images aligned to the road graph nodes. 
           </p>
           <p>
-            Previous work for predicting accident occurrences has utilized graph-structural features extracted from road networks, which do not incorporate physical and environmental aspects of the road. This work constructs a large-scale dataset across six U.S. states, comprising nine million traffic accident records from official sources, and one million high-resolution satellite images for each node of the road network. Additionally, every node is annotated with features such as the region's weather statistics, traffic volume, and road types (e.g., residential vs. motorway).
+            Previous work for predicting accident occurrences has utilized graph-structural features extracted from road networks, which do not incorporate physical and environmental aspects of the road. This work constructs <strong>large-scale dataset across six U.S. states, comprising nine million traffic accident records from official sources, and one million high-resolution satellite images for each node of the road network.</strong> Additionally, every node is annotated with features such as the region's weather statistics, traffic volume, and road types (e.g., residential vs. motorway).
           </p>
           <p>
              Utilizing this dataset, we conduct a comprehensive evaluation of multimodal learning methods that integrate both visual and network embeddings. Our findings show that by combining network and visual features, multimodal learning achieves an accurate prediction of accident occurrences with an average AUROC of 90.1%, outperforming graph-based methods by 3.7% on average. With the enhanced accuracy provided by multimodal embeddings, we conduct a causal analysis based on a matching estimator to examine the contributing factors of traffic accidents. The findings suggest that accident frequency increases under higher precipitation by 24%, and on higher speed limit roads such as motorways by 22%, after adjusting for other confounding factors through the embeddings. Seasonal factors increase accident rates by 29%. Ablation studies validate the importance of satellite imagery features for achieving accurate prediction.
@@ -316,7 +318,7 @@
 </section>
 
 
-<section class="section" id="BibTeX">
+<!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
     <pre><code>@article{park2021nerfies,
@@ -326,17 +328,17 @@
   year      = {2021},
 }</code></pre>
   </div>
-</section>
+</section> -->
 
 
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
+         href="https://github.com/ziniuzhang/mmtrace/blob/main/static/MMTraCE_KDD_submission.pdf">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/VirtuosoResearch/MMTraCE" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
@@ -349,11 +351,8 @@
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
           <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
+            Credit to this <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a>.
           </p>
         </div>
       </div>
