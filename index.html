@@ -40,6 +40,9 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+  <script type="text/javascript" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 </head>
 <body>
 
@@ -174,7 +177,7 @@
         <img src="./static/images/stat2.png" style="width: 47%;" />
       </div>
       <h2 class="subtitle has-text-left">
-        Statistics of the road network, accident, satellite, and associated features in our dataset.
+        <strong>Statistics</strong> of the total number of edges, average edge length in meters, road network density, availability of traffic volume, period of accident records, total number of accident records, and total number of satellite images. 
       </h2>
     </div>
   </div>
@@ -188,6 +191,26 @@
       </div>
       <h2 class="subtitle has-text-left">
         <strong>The proportion of different road types among six states' road networks.</strong>  Residential roads account for the vast majority of the total, making up approximately 74.5% of all roads. Other types, such as tertiary, secondary, and primary, contribute much smaller proportions by comparison.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <div class="image-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem;; margin-bottom: 1.5rem;">
+        <figure style="width: 40%; text-align: center;">
+          <img src="./static/images/acci_road_type_all-1.png" style="width: 100%;" />
+          <figcaption style="font-size: 0.9em; margin-top: 0.3em;">Total accident count</figcaption>
+        </figure>
+        <figure style="width: 40%; text-align: center;">
+          <img src="./static/images/acci_road_type_avg-1.png" style="width: 100%;" />
+          <figcaption style="font-size: 0.9em; margin-top: 0.3em;">Average accident count</figcaption>
+        </figure>
+      </div>
+      <h2 class="subtitle has-text-left">
+        <strong>Accident count</strong> of motorway (M), motorway link (M_L), primary (Pri), primary link (Pri_L), residential (Res), secondary (Sec), secondary link (Sec_L), tertiary (Ter), tertiary link (Ter_L), trunk (Tru), trunk link (Tru_L), living street, road, and trailhead.
       </h2>
     </div>
   </div>
@@ -297,6 +320,18 @@
   </div>
 </section> -->
 
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="column is-four-fifths">
+      <h2 class="title is-3">Contact</h2>
+    </div>
+    <div class="hero-body">
+      <h2 class="subtitle has-text-left">
+        If you have any questions, feel free to contact <a href="mailto:zhang.zini@northeastern.edu">zhang.zini@northeastern.edu</a>.
+      </h2>
+    </div>
+  </div>
+</section>
 
 <footer class="footer">
   <div class="container">
